@@ -1,0 +1,10 @@
+{
+  "id": "openclaw-ntfy-demo",
+  "channels": ["ntfy"],
+  "skills": [],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

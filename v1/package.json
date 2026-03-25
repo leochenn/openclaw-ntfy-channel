@@ -1,0 +1,21 @@
+{
+  "name": "openclaw-ntfy-demo",
+  "version": "0.1.0",
+  "description": "ntfy channel demo for OpenClaw",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "openclaw.plugin.json",
+    "src/"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ],
+    "install": {
+      "localPath": "extensions/ntfy",
+      "defaultChoice": "local"
+    }
+  }
+}
