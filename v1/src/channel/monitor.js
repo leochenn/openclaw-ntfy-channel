@@ -1,5 +1,5 @@
 function readCfg(cfg) {
-  const baseUrl = cfg?.channels?.ntfy?.baseUrl || process.env.NTFY_BASE_URL || 'http://118.89.62.149:8090'
+  const baseUrl = cfg?.channels?.ntfy?.baseUrl || process.env.NTFY_BASE_URL || 'http://<ntfy-server>:8090'
   const topicIn = cfg?.channels?.ntfy?.topicIn || process.env.NTFY_TOPIC_IN || 'openclaw_in'
   const topicOut = cfg?.channels?.ntfy?.topicOut || process.env.NTFY_TOPIC_OUT || 'openclaw_out'
   return { baseUrl: String(baseUrl), topicIn: String(topicIn), topicOut: String(topicOut) }

@@ -10,7 +10,7 @@ description: Send notifications to an ntfy service. Use when a user asks to send
 This skill enables sending notifications to an ntfy service via HTTP POST. It's designed to deliver quick alerts, messages, and notifications to subscribed devices and applications. The skill uses a pre-configured ntfy endpoint and supports customizable titles, priority levels, and topics.
 
 **Current Configuration:**
-- **Endpoint:** `http://118.89.62.149:8090/openclaw_in2`
+- **Endpoint:** `http://<ntfy-server>:8090/openclaw_in2`
 - **Default topic:** `openclaw_in2`
 
 ## Quick Start

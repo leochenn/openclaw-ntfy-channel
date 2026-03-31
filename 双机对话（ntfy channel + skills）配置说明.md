@@ -33,7 +33,7 @@
   "channels": {
     "ntfy": {
       "enabled": true,
-      "baseUrl": "http://118.89.62.149:8090",
+      "baseUrl": "http://<ntfy-server>:8090",
       "topicIn": "openclaw_in",
       "topicOut": "openclaw_in2"
     }
@@ -50,7 +50,7 @@
   "channels": {
     "ntfy": {
       "enabled": true,
-      "baseUrl": "http://118.89.62.149:8090",
+      "baseUrl": "http://<ntfy-server>:8090",
       "topicIn": "openclaw_in2",
       "topicOut": "openclaw_in"
     }
@@ -64,3 +64,6 @@
 - 电脑 B：接收 `openclaw_in2`，发送 `openclaw_in`
 
 两台机器的 `topicIn` / `topicOut` 互为对端，从而实现双向消息流转与对话。
+
+注意:
+在使用前需要替换<ntfy-server>为真实的服务地址（包括skills）！！！

@@ -22,7 +22,7 @@ def send_ntfy_message(message, title="OpenClaw Message", priority="default", top
         dict: Response from ntfy server or error information
     """
     # ntfy endpoint
-    url = f"http://118.89.62.149:8090/{topic.lstrip('/')}"
+    url = f"http://<ntfy-server>:8090/{topic.lstrip('/')}"
 
     # Map priority to ntfy numeric values
     priority_map = {

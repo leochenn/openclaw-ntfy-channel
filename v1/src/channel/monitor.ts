@@ -3,7 +3,7 @@ import type { ClawdbotConfig, RuntimeEnv } from 'openclaw/plugin-sdk'
 type MonitorOpts = { config: ClawdbotConfig; runtime?: RuntimeEnv; abortSignal?: AbortSignal }
 
 function readCfg(cfg: ClawdbotConfig) {
-  const baseUrl = (cfg as any)?.channels?.ntfy?.baseUrl || process.env.NTFY_BASE_URL || 'http://118.89.62.149:8090'
+  const baseUrl = (cfg as any)?.channels?.ntfy?.baseUrl || process.env.NTFY_BASE_URL || 'http://<ntfy-server>:8090'
   const topicIn = (cfg as any)?.channels?.ntfy?.topicIn || process.env.NTFY_TOPIC_IN || 'openclaw_in'
   const topicOut = (cfg as any)?.channels?.ntfy?.topicOut || process.env.NTFY_TOPIC_OUT || 'openclaw_out'
   return { baseUrl: String(baseUrl), topicIn: String(topicIn), topicOut: String(topicOut) }
